@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Servidor de Conteúdo</title>
+  <style>
+    :root{
+      --bg:#f5f7fb;
+      --card:#ffffff;
+      --accent:#2b7cff;
+      --muted:#6b7280;
+      font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+    }
+    body{
+      margin:0;
+      background:linear-gradient(180deg,var(--bg),#eef2f7);
+      color:#111827;
+      -webkit-font-smoothing:antialiased;
+    }
+    header{
+      padding:26px 20px;
+      display:flex;
+      gap:16px;
+      align-items:center;
+    }
+    .logo{
+      width:56px;height:56px;
+      border-radius:10px;
+      background:linear-gradient(135deg,var(--accent),#6fb6ff);
+      display:flex;align-items:center;justify-content:center;
+      color:white;font-weight:700;font-size:20px;
+      box-shadow:0 6px 18px rgba(43,124,255,0.18);
+    }
+    h1{margin:0;font-size:20px}
+    p.lead{margin:6px 0 0;color:var(--muted);font-size:14px}
+    main{
+      max-width:820px;
+      margin:20px auto;
+      padding:0 16px;
+    }
+    .card{
+      background:var(--card);
+      padding:20px;
+      border-radius:12px;
+      box-shadow:0 6px 18px rgba(16,24,40,0.06);
+      margin-top:10px;
+    }
+    footer{
+      max-width:820px;
+      margin:20px auto;
+      padding:10px 16px;
+      color:var(--muted);
+      font-size:13px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">X</div>
+    <div>
+      <h1>Servidor de Conteúdo</h1>
+      <p class="lead">Página simples para testes de conectividade na simulação de rede.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="card">
+      <p>
+        Esta é uma página hospedada em um servidor de demonstração.  
+        Se você está vendo isso, significa que:
+      </p>
+      <ul>
+        <li>o roteamento está funcionando,</li>
+        <li>a tradução de endereços (NAT) está correta,</li>
+        <li>e a comunicação entre as redes está ativa.</li>
+      </ul>
+
+      <p>Use esta página apenas como referência visual no seu laboratório.</p>
+    </section>
+  </main>
+
+  <footer>
+    © Projeto de rede empresarial - A3 - UNA BETIM
+    Luiz Otávio BArtilheiro de Sousa - Professor Orlando Ferreira
+  </footer>
+
+</body>
+</html>
